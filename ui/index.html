@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Deluxe Motorsport</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app" class="hidden">
+        <!-- Brand mark -->
+        <div class="brand">
+            <span class="brand__mark"></span>
+            <div class="brand__text">
+                <span class="brand__name" id="brandName">Premium Deluxe Motorsport</span>
+                <span class="brand__sub" id="brandSub">Daily Collection</span>
+            </div>
+        </div>
+
+        <!-- Vehicle info card -->
+        <section class="card" id="card">
+            <header class="card__head">
+                <span class="card__class" id="vehClass">Super</span>
+                <span class="card__index" id="vehIndex">01 / 04</span>
+            </header>
+
+            <h1 class="card__name" id="vehName">Vehicle</h1>
+
+            <div class="stats" id="stats">
+                <div class="stat">
+                    <span class="stat__label" id="lblSpeed">Top Speed</span>
+                    <span class="stat__track"><span class="stat__fill" data-stat="speed"></span></span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label" id="lblAccel">Acceleration</span>
+                    <span class="stat__track"><span class="stat__fill" data-stat="accel"></span></span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label" id="lblBraking">Braking</span>
+                    <span class="stat__track"><span class="stat__fill" data-stat="braking"></span></span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label" id="lblHandling">Handling</span>
+                    <span class="stat__track"><span class="stat__fill" data-stat="handling"></span></span>
+                </div>
+            </div>
+
+            <div class="card__foot">
+                <span class="price__label">PRICE</span>
+                <span class="price" id="vehPrice">$0</span>
+            </div>
+        </section>
+
+        <!-- Control hints -->
+        <footer class="hints" id="hints">
+            <span class="hint"><kbd class="hint__key hint__key--wide">Mouse</kbd><span id="hintRotate">Look around</span></span>
+            <span class="hint"><kbd class="hint__key">Scroll</kbd><span id="hintZoom">Zoom</span></span>
+            <span class="hint"><kbd class="hint__key">&larr;</kbd><kbd class="hint__key">&rarr;</kbd><span id="hintSwitch">Switch</span></span>
+            <span class="hint"><kbd class="hint__key">F</kbd><span id="hintSit">Sit inside</span></span>
+            <span class="hint"><kbd class="hint__key hint__key--accent">E</kbd><span id="hintBuy">Buy</span></span>
+            <span class="hint"><kbd class="hint__key">Backspace</kbd><span id="hintExit">Exit</span></span>
+        </footer>
+
+        <!-- Confirm purchase modal -->
+        <div class="modal" id="modal">
+            <div class="modal__backdrop"></div>
+            <div class="modal__card" role="dialog" aria-modal="true">
+                <h2 class="modal__title" id="confirmTitle">Confirm purchase</h2>
+                <p class="modal__body" id="confirmBody">Are you sure you want to buy this vehicle?</p>
+                <div class="modal__veh">
+                    <span class="modal__veh-name" id="confirmName">Vehicle</span>
+                    <span class="modal__veh-price" id="confirmPrice">$0</span>
+                </div>
+                <div class="modal__actions">
+                    <button class="btn btn--ghost" id="btnCancel">Cancel</button>
+                    <button class="btn btn--primary" id="btnConfirm">Confirm purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
