@@ -11,6 +11,8 @@ the car is a real, garage-managed owned vehicle.
 
 Click here to watch the demo video: [**Demo Video**](https://www.youtube.com/watch?v=w8cnl8wpGVQ)
 
+Join Our Discord Server: https://discord.gg/GtDWhu9d6T
+
 ---
 
 ## Features
